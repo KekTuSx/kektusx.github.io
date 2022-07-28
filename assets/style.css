@@ -6,6 +6,8 @@ body{
 	background-size: cover;
 	background-color: #091d28;
 	background-attachment: fixed;
+	background-position: center;
+	height: 100vh;
 }
 .box{
 	width: 25vmax;
