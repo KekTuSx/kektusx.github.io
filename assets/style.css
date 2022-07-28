@@ -24,8 +24,8 @@ body{
 	max-width: 12vmax;
 }
 .box h1{
-	/* font-size: 3vmax; */
-	font-size: 5vmin;
+	font-size: 3vmax;
+	/* font-size: 5vmin; */
 	letter-spacing: 4px;
 	font-weight: 100;
 }
@@ -50,7 +50,7 @@ ul{
 .box li a{
 	color: white;
 	text-decoration: none;
-	font-size: 6vmin;
+	font-size: 3.5vmax;
 	transition: all ease-in-out 250ms;
 }
 .box li a:hover{
