@@ -5,7 +5,7 @@ body{
 	background: url(/assets/images/tetons-at-night_2x.png) no-repeat;
 	background-size: cover;
 	background-color: #091d28;
-
+	overflow: hidden;
 }
 .box{
 	width: 25vmax;
