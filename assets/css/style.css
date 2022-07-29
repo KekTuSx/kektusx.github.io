@@ -25,59 +25,67 @@ body{
 	padding-top: 5%;
 }
 /* Main profile box */
-.box{
+#hero .box{
 	/* sizes */
 	width: 50vmin;
 	margin: auto;
 	padding: 4vmin 1vmin 0vmin;
 	border-radius: 8px; /* Windows 11 border radius */
-	
 	/* colors */
 	background: rgba(0, 0, 0, 0.4);
 	color: white;
-	
 	/* text */
 	font-family: Fira Code VF, monospace;
 	text-align: center;
 }
-
-.box .box-img{
-	border-radius: 50%;
+/* Profile picture */
+#hero .box .box-img{
+	/* size */
 	max-width: 24vmin;
-	box-shadow: 0 0 26px #2128e961;
+	/* circle */
+	border-radius: 50%;
+	/* shadow/glow */
+	box-shadow: 0 0 26px #2128e95d;
 }
-.box h1{
+/* Main header →"KekTuS" */
+#hero .box h1{
 	font-size: calc(1em + 3vmin);
 	letter-spacing: 4px;
 	font-weight: 300;
 }
-.box h5{
+/* Role → "Beginner SysAdmin..." */
+#hero .box h5{
 	font-size: calc(0.5em + 1vmin);
 	letter-spacing: 0px;
 	font-weight: 400;
 	margin: 8px;
 }
-.box p{
+/* About */
+#hero .box p{
 	text-align: justify;
 }
 
-ul{
+/* Link list */
+#hero ul{
 	margin: 0;
 	padding: 0; 
 }
-.box li{
+/* Link list entries */
+#hero .box li{
 	display: inline-block;
 	margin: 6px;
 	margin-top: 2vmin;
 	list-style: none;
 }
-.box li a{
+/* Platform icons */
+#hero .box li a{
 	color: white;
 	text-decoration: none;
 	font-size: calc(1em + 5.5vmin);
 	transition: all ease-in-out 250ms;
 }
-.box li a:hover{
+/* Platform icons on hover */
+#hero .box li a:hover{
   color: #6c7099;
 }
 
