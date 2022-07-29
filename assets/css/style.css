@@ -1,33 +1,52 @@
 body{
 	margin: 0;
 	padding: 0;
-	background: url(/assets/images/tetons-at-night_2x.png) no-repeat;
-	background-size: cover;
 	background-color: #091d28;
-	background-attachment: fixed;
-	background-position: center;
 }
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero{
+	box-sizing: border-box;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+
+	/* background */
+	background: url(/assets/images/tetons-at-night_2x.png) no-repeat center;
+	background-size: cover;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+
+	/* padding for .box, margin is broken*/
+	padding-top: 5%;
+}
+/* Main profile box */
 .box{
-	/* width: 25vmax; */
-	width: 54vmin;
-	background: rgba(0, 0, 0, 0.4);
-	/* padding: 30px; */
-	padding: 4vmin;
-	text-align: center;
+	/* sizes */
+	width: 50vmin;
 	margin: auto;
-	margin-top: 5%;
+	padding: 4vmin 1vmin 0vmin;
+	border-radius: 8px; /* Windows 11 border radius */
+	
+	/* colors */
+	background: rgba(0, 0, 0, 0.4);
 	color: white;
-	/* font-family: 'Century Gothic',sans-serif; */
+	
+	/* text */
 	font-family: Fira Code VF, monospace;
+	text-align: center;
 }
-.box-img{
+
+.box .box-img{
 	border-radius: 50%;
-	/* max-width: 12vmax; */
 	max-width: 24vmin;
-	box-shadow: 0 0 25px -0.6px #2128e961;
+	box-shadow: 0 0 26px #2128e961;
 }
 .box h1{
-	/* font-size: calc(1em + 1.5vmax); */
 	font-size: calc(1em + 3vmin);
 	letter-spacing: 4px;
 	font-weight: 300;
@@ -36,6 +55,7 @@ body{
 	font-size: calc(0.5em + 1vmin);
 	letter-spacing: 0px;
 	font-weight: 400;
+	margin: 8px;
 }
 .box p{
 	text-align: justify;
@@ -48,15 +68,27 @@ ul{
 .box li{
 	display: inline-block;
 	margin: 6px;
+	margin-top: 2vmin;
 	list-style: none;
 }
 .box li a{
 	color: white;
 	text-decoration: none;
-	/* font-size: 3.5vmax; */
 	font-size: calc(1em + 5.5vmin);
 	transition: all ease-in-out 250ms;
 }
 .box li a:hover{
   color: #6c7099;
+}
+
+/*--------------------------------------------------------------
+# Blog Section
+--------------------------------------------------------------*/
+#blog{
+	position: relative;
+	width: 100%;
+}
+
+.column{
+	position: relative;
 }
